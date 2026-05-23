@@ -1,0 +1,42 @@
+:root {
+  --c-tech-blue: #0066FF;
+  --c-tech-blue-dim: #003d99;
+  --c-alert-red: #FF2D55;
+  --c-alert-red-dim: #cc2444;
+  --c-dark-bg: #080E1A;
+  --c-dark-surface: #0C1525;
+  --c-dark-card: #111D33;
+  --c-dark-text: #1A2A4A;
+  --c-theme-blue: #00BBFF;
+  --c-light-text: #E0E8F4;
+  --c-light-text-dim: #8899B0;
+  --c-page-bg: #060B14;
+  --c-paper-bg: #FFFFFF;
+  --c-paper-bg-alt: #F4F7FB;
+  --c-medal-gold: #FFB800;
+  --c-warning-orange: #FF6B35;
+  --c-border-light: #D8DFE8;
+  --c-border-blue: rgba(0, 102, 255, 0.2);
+  --c-accent-glow: rgba(0, 102, 255, 0.15);
+
+  --h1-bg: linear-gradient(135deg, #0A1628 0%, #0F2240 100%);
+  --h1-color: #E0E8F4;
+  --h2-color: #1A2A4A;
+  --h3-gradient: linear-gradient(135deg, #00BBFF, #0066FF);
+
+  --toolbar-height: 52px;
+  --side-panel-width: 240px;
+
+  --font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.18);
+  --shadow-glow-blue: 0 0 20px rgba(0, 102, 255, 0.25);
+  --shadow-glow-red: 0 0 20px rgba(255, 45, 85, 0.2);
+
+  --a4-width: 210mm;
+  --a4-height: 297mm;
+}

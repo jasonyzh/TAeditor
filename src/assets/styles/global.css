@@ -1,0 +1,128 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-family);
+  background: var(--c-page-bg);
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#app {
+  height: 100%;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 102, 255, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 102, 255, 0.4);
+}
+
+.paper-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.paper-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  body {
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .app {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .toolbar,
+  .side-panel-wrapper {
+    display: none !important;
+  }
+
+  .app-body {
+    overflow: visible !important;
+  }
+
+  .editor-area {
+    overflow: visible !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .paper {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .block-section {
+    break-inside: avoid;
+  }
+
+  .paper.is-exporting .block-section {
+    break-before: page;
+  }
+
+  .paper.is-exporting .block-section:first-child {
+    break-before: auto;
+  }
+
+  .paper button,
+  .paper .add-section-row,
+  .paper .widget-actions,
+  .paper .free-actions,
+  .paper .col-action {
+    display: none !important;
+  }
+}
+
+.paper.is-exporting button,
+.paper.is-exporting .add-section-row,
+.paper.is-exporting .widget-actions,
+.paper.is-exporting .free-actions,
+.paper.is-exporting .col-action {
+  display: none !important;
+}
